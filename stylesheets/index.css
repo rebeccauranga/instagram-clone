@@ -6,16 +6,43 @@ html {
   }
 
   html, body {
-      height: 100%;
-      width: 100%;
+    height: 100%;
+    width: 100%;
+    background: rgb(250, 250, 250);
   }
+/* 
+  h1 {
+      margin-left: 45%;
+      margin-top: 50px;
+  } */
 
   .picture-frame {
-    width: 150px;
-    /* yes but, we're trying to break it */
-    /* display: inline-block; */
+    width: 80%;
+    /* padding: 15px; */
+    /* height: 300px; */
+    /* centering below */
+    display: flex;
+    justify-content: center;
+    border: 2px solid gold;
+    align-items: center;
+}
+
+.picture-frame img {
+    width: 100%;
+}
+
+.playground {
+    border: 2px solid;
+    display: flex;
+    min-height: 300px;
+    flex-direction: column;
+    /* how to line up on main axis */
+    justify-content: flex-start;
+    /* how to line up on ross axis */
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin: 30px 200px 0px 200px; */
   }
 
-  .picture-frame img {
-      width: 100%
-  }
+
+
