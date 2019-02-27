@@ -8,12 +8,14 @@ html {
   html, body {
     height: 100%;
     width: 100%;
-    /* background: rgb(250, 250, 250); */
+    background: rgb(250, 250, 250);
   }
 
   .logo-text {
       text-align: center;
       font-size: 24px;
+      font-family: 'Comfortaa', cursive;
+      text-transform: uppercase;
   }
 
   .picture-frame {
@@ -29,9 +31,6 @@ html {
 
 .picture-frame img {
     width: 100%;
-    /* width: 400px;
-    height: 400px;
-    object-fit: cover; */
 }
 
 .playground {
@@ -41,7 +40,7 @@ html {
     flex-direction: column;
     /* how to line up on main axis */
     justify-content: flex-start;
-    /* how to line up on ross axis */
+    /* how to line up on aross axis */
     align-items: center;
     flex-wrap: wrap;
     /* margin: 30px 200px 0px 200px; */
@@ -108,7 +107,7 @@ html {
     }
 
     .logo-text {
-        font-size: 40px;
+        font-size: 45px;
         text-align: center;
     }
 }
