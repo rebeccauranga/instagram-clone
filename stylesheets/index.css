@@ -21,7 +21,6 @@ html {
   .picture-frame {
     width: 80%;
     padding: 8px;
-    /* height: 300px; */
     /* centering below */
     display: flex;
     justify-content: center;
@@ -29,12 +28,22 @@ html {
     align-items: center;
 }
 
-.picture-frame img {
+  /* Use the :hover pseudo-class */
+  .picture-frame:hover {
+    outline: 5px soild plum;
+  }
+
+  /* scale the image up if the picture-frame is being hovered */
+  .picture-frame:hover img{
+    transform: scale(1.1);
+    opacity: 1.0;
+  }
+
+  .picture-frame img {
     width: 100%;
-}
+  } 
 
 .playground {
-    /* border: 2px solid; */
     display: flex;
     min-height: 300px;
     flex-direction: column;
@@ -43,16 +52,12 @@ html {
     /* how to line up on aross axis */
     align-items: center;
     flex-wrap: wrap;
-    /* margin: 30px 200px 0px 200px; */
   }
 
   
   /* it's like an "if statement" for CSS */
   @media screen and (min-width: 500px) {
-      body {
-          /* background: cornflowerblue; */
-      }
-
+      
       .picture-frame {
         width: 33%;
         padding: 10px;
@@ -67,9 +72,6 @@ html {
   }
 
   @media screen and (min-width: 1000px) {
-    body {
-        /* background: palevioletred; */
-    }
 
     .picture-frame {
     width: 30%;
